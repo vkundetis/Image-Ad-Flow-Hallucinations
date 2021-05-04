@@ -22,4 +22,4 @@ Due to diversity of the dataset, the performance of the model on our dataset see
 ### Ideas for Future Work
 
 1. **Improve Flow Prediction -** The Im2Flow model could possibly be improved by training it on Pitt's video ad dataset. This is a more complex dataset than HMDB-51, which could improve flow hallucinations on images.
-2. **Generate a performance metric -** The model did not show consistant results for images on our dataset. A robust performance metric that uses both the flow prediction and base image would be useful when applying predicted flow.
+2. **Generate a performance metric -** The model did not show consistant results for images on our dataset. A robust performance metric that uses both the flow prediction and base image would be useful for determining cases when we should or should not use flow for interpreting.
