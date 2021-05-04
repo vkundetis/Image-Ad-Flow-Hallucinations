@@ -10,7 +10,7 @@ These pixel level representations of flow can be visualized by drawing flow vect
 ```Shell
   python visualizeFlow.py --flowImgInputDir output/ --rgbImgDir input/ --arrowImgOutDir visualization
   ```
-This will generate 
+The folder `/visualization` will be created, which will contain the images with drawn on flown vectors.
  
 ### Observations
 Due to diversity of the dataset, the performance of the model on our dataset seemed to have high variance, however their were images that appeared to provide promising results. I observed these patterns from flow hallucinations generated from a random subset of Pitt's ad dataset. These appear to be biases created from the training dataset (HMDB-51). A dataset of primarily humans doing everyday tasks. <br/>
