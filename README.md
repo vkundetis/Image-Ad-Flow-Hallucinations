@@ -5,7 +5,7 @@ The zip file located in the folder predictions contains the pixel representation
 ### Drawing Flow Vectors
 These pixel level representations of flow can be visualized by drawing flow vectors. This can be done as follows:
 1. Download Pitt's image-ad dataset, which can be found here: [[Image Ads]](http://people.cs.pitt.edu/~kovashka/ads/#image).
-2. Move the images you want to visualize into a folder named `input`. Move the corresponding flow hallucinationsm for the images into a folder named `output`.
+2. Move the images you want to visualize into a folder named `/input`. Move the corresponding flow hallucinationsm for the images into a folder named `/output`.
 3. Run the following code: 
 ```Shell
   python visualizeFlow.py --flowImgInputDir output/ --rgbImgDir input/ --arrowImgOutDir visualization
