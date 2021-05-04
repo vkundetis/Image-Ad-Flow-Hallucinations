@@ -1,11 +1,11 @@
 ## Optical Flow Hallucinations for Pitt's AD dataset
-Im2Flow's implementation for flow hallucination was used to generate these predictions. Their implementation and project page can be found here: [[Github Repo]](https://github.com/rhgao/Im2Flow)    [[Project Page]](http://vision.cs.utexas.edu/projects/im2flow/)
+Im2Flow's implementation for flow hallucination was used to generate these predictions. Their implementation and project page can be found here: [[GitHub Repo]](https://github.com/rhgao/Im2Flow)    [[Project Page]](http://vision.cs.utexas.edu/projects/im2flow/)
 ### Optical Flow Hallucinations
 The zip file located in the folder predictions contains the pixel representations of flow for the ads dataset.
 ### Drawing Flow Vectors
 These pixel level representations of flow can be visualized by drawing flow vectors. This can be done as follows:
 1. Download Pitt's image-ad dataset, which can be found here: [[Image Ads]](http://people.cs.pitt.edu/~kovashka/ads/#image).
-2. Move the images you want to visualize into a folder named `/input`. Move the corresponding flow hallucinationsm for the images into a folder named `/output`.
+2. Move the images you want to visualize into a folder named `/input`. Move the corresponding flow hallucinations for the images into a folder named `/output`.
 3. Run the following code: 
 ```Shell
   python visualizeFlow.py --flowImgInputDir output/ --rgbImgDir input/ --arrowImgOutDir visualization
@@ -23,3 +23,4 @@ Due to diversity of the dataset, the performance of the model on our dataset see
 
 1. **Improve Flow Prediction -** The Im2Flow model could possibly be improved by training it on Pitt's video ad dataset. This is a more complex dataset than HMDB-51, which could improve flow hallucinations on images.
 2. **Generate a performance metric -** The model did not show consistant results for images on our dataset. A robust performance metric that uses both the flow prediction and base image would be useful for determining cases when we should or should not use flow for interpreting.
+3. **Use flow for interpretation -** The following study found here: [[Motion Captioning Paper]] uses (http://people.cs.pitt.edu/~kovashka/ads/#image).
