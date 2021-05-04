@@ -2,8 +2,10 @@
 Im2Flow's implementation for flow hallucination was used to generate these predictions. Their implementation and project page can be found here: [[Github Repo]](https://github.com/rhgao/Im2Flow)    [[Project Page]](http://vision.cs.utexas.edu/projects/im2flow/)
 ### Optical Flow Hallucinations
 The zip file located in the folder predictions contains the pixel representations of flow for the ads dataset.
-### Generating Flow Visualizations
-To draw 
+### Drawing Flow Vectors
+These pixel level representations of flow can be visualized by drawing flow vectors. This can be done as follows:
+1. Download Pitt's image-ad dataset into a folder named '''/output''' , which can be found here: [[Image Ads]](http://people.cs.pitt.edu/~kovashka/ads/#image).
+ 
 ### Observations
 Due to diversity of the dataset, the performance of the model on our dataset seemed to have high variance, however their were images that appeared to provide promising results. I observed these patterns from flow hallucinations generated from a random subset of Pitt's ad dataset. These appear to be biases created from the training dataset (HMDB-51). A dataset of primarily humans doing everyday tasks. <br/>
 
