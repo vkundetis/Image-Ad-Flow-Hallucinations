@@ -5,7 +5,7 @@ The zip file located in the folder predictions contains the pixel representation
 ### Generating Flow Visualizations
 To draw 
 ### Observations
-Due to diversity of the dataset, the performance of the model on our dataset seemed to have high variance, however their were images that appeared to provide promising results. I observed these patterns from flow hallucinations generated from a random subset of Pitt's ad dataset. These appear to be biases created from the training dataset (HMDB-51). A dataset of mostly humans doing everyday tasks. <br/>
+Due to diversity of the dataset, the performance of the model on our dataset seemed to have high variance, however their were images that appeared to provide promising results. I observed these patterns from flow hallucinations generated from a random subset of Pitt's ad dataset. These appear to be biases created from the training dataset (HMDB-51). A dataset of primarily humans doing everyday tasks. <br/>
 
 1. **Single/Focused Object -** Model performed better when there was a clear, single object as the focus of the ad. Many of the videos in HMDB-51 had a single object in focus, which I believe is the likely reason for this.
 2. **Realistic Objects -** The results tended to be better on realistic objects, and it appeared to be thrown off by the abstraction in many ads.
